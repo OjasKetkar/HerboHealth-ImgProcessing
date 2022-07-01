@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herbo health info</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Baloo+Bhai+2?query=baloo+bhai+">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Baloo Bhai 2', cursive;;
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    margin-top: 0px;
+    top: 0px;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#log{
+    margin: 15px 15px;
+}
+#logo img{
+    height: 60px;
+    width: 60px;
+    margin: 5px 5px;
+    border: 4px solid black;
+    border-radius: 40px;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.head1{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.head1 img{
+    height: 250px;
+    width: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+#box1{
+    border: 4px solid black;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: grey;
+}
+#first::before{
+    content: "";
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2020/06/21/13/40/holy-basil-5324875_960_720.jpg") no-repeat center center/cover;
+    height: 1390px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.49;
+
+}
+.head2{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.head2 img{
+    height: 250px;
+    width: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+#box2{
+    border: 4px solid black;
+    height: 220px;
+    width: 300px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: grey;
+}
+#second::before{
+    content: "";
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2018/04/24/23/03/aloe-vera-3348381_960_720.jpg") no-repeat center center/cover;
+    height: 1240px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.49;
+}
+.head3{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.head3 img{
+    height: 250px;
+    width: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+#box3{
+    border: 4px solid black;
+    height: 320px;
+    width: 300px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: grey;
+}
+#third::before{
+    content: "";
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2022/01/17/02/14/lemongrass-6943712_960_720.jpg") no-repeat center center/cover;
+    height: 1250px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.49;
+}
+.head4{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.head4 img{
+    height: 250px;
+    width: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+#box4{
+    border: 4px solid black;
+    height: 220px;
+    width: 300px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: grey;
+}
+#fourth::before{
+    content: "";
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2021/08/18/09/44/neem-6555145_960_720.jpg") no-repeat center center/cover;
+    height: 1290px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.49;
+}
+.head5{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.head5 img{
+    height: 250px;
+    width: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+#box5{
+    border: 4px solid black;
+    height: 220px;
+    width: 300px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: grey;
+}
+#fifth::before{
+    content: "";
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2017/08/31/16/57/kadipatta-2701445_960_720.jpg") no-repeat center center/cover;
+    height: 1165px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.49;
+}
+.head6{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.head6 img{
+    height: 250px;
+    width: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+#box6{
+    border: 4px solid black;
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: grey;
+}
+#sixth::before{
+    content: "";
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2016/10/04/12/28/ginger-1714196_960_720.jpg") no-repeat center center/cover;
+    height: 1350px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.49;
+}
+.head7{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.head7 img{
+    height: 250px;
+    width: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+#box7{
+    border: 4px solid black;
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: grey;
+}
+#seventh::before{
+    content: "";
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2019/04/02/04/32/masala-4096891_960_720.jpg") no-repeat center center/cover;
+    height: 1040px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.49;
+}
+.head8{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.head8 img{
+    height: 250px;
+    width: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+#box8{
+    border: 4px solid black;
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: grey;
+}
+#eighth::before{
+    content: "";
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2021/07/19/15/58/ajwain-6478461_960_720.jpg") no-repeat center center/cover;
+    height: 1245px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.49;
+}
+.head9{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.head9 img{
+    height: 250px;
+    width: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+#box9{
+    border: 4px solid black;
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: grey;
+}
+#ninth::before{
+    content: "";
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2018/09/03/19/08/papaya-3652074_960_720.jpg") no-repeat center center/cover;
+    height: 1155px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.49;
+}
+.head10{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.head10 img{
+    height: 250px;
+    width: 250px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+#box10{
+    border: 4px solid black;
+    height: 320px;
+    width: 320px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: grey;
+}
+#tenth::before{
+    content: "";
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2019/12/14/15/50/marigold-4695184_960_720.jpg") no-repeat center center/cover;
+    height: 1300px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.39;
+}
+.pp{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+#bb{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#hh{
+    margin-left: 100px;
+}
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpeg" alt="error">
+        </div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../order/order1.html">Order</a></li>
+            <li class="item"><a href="http://127.0.0.1:5000/" target="_blank">Image Process</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="first"><br>
+            <h1 class="head1">Tulsi ( Ocimum tenuiflorum):<img src="https://cdn.pixabay.com/photo/2021/06/03/12/45/basil-6306981_960_720.jpg" alt="error"></h1><br><p class="pp">Tulsi is an aromatic shrub in the basil family Lamiaceae (tribe ocimeae) that is thought to have originated in north central India and now grows native throughout the eastern world tropics.</p><br><h2 id="hh">Medical Benefits :</h2><br><p class="pp">Tulsi is the best natural painkiller and solution to many of your health problems. It is used for the treatment of:</p>
+            <ol class="pp">
+                <li>Fever, common cold, sore throat, headaches</li>
+                <li>Skin problems like acne, blackheads and premature ageing.</li>
+                <li>Insect bites.</li>
+                <li>Respiratory problems like asthma</li>
+                <li>Heart disease </li>
+                <li>Kidney stones </li>
+                <li>It helps generate healthy mother milk during lactation</li>
+            </ol><br>
+            <h2 id="hh">How to grow :</h2><br><p class="pp">Method 1 – a) Fill a flower pot with high quality soil and water it thoroughly. You should leave about an inch (2.54 cm) of space at the top of the pot.<br> 
+                b) Sow the seeds ¼ inch (0.64 cm) beneath the soil.<br>
+                c) Keep the soil moist until the seeds germinate. The seeds will begin to grow in about 1-2 weeks<br>
+                d) Tulsi requires 6-8 hours of sunlight a day.<br>
+                Method 2 – a) Cut a 4-6 inch (10-15 cm) stem from a mature tulsi plant.<br>
+                b) Place the tulsi cutting in a glass container filled with water.<br> 
+                c) Put your tulsi plant in a warm, sunny spot.<br>
+                d) Transfer the cuttings to a pot of soil when the roots begin to grow. Your cutting will be ready to transfer to the soil when its roots are 1⁄4–1⁄2 inch (0.64–1.27 cm) long. It can take between 7 and 10 days to reach this point.<br></p><br><br>
+            <div id="box1"><h2>INTERESTING FACT :</h2><br><br><p class="pp" id="bb">The Tulsi is the most sacred plant that we worship because of its connection to Lord Vishnu & In ancient scriptures, the Tulsi is regarded as a gateway between heaven and earth.</p></div>
+        </div><br><br>
+        <div id="second">
+            <h1 class="head2">ALOE VERA (Aloe barbadensis miller) :<img src="https://cdn.pixabay.com/photo/2020/01/01/10/11/aloe-vera-4733276_960_720.jpg" alt=""></h1><br><p class="pp">It belongs to Asphodelaceae (Liliaceae) family. It grows mainly in the dry regions of Africa, Asia, Europe and America. In India, it is found in Rajasthan, Andhra Pradesh, Gujarat, Maharashtra and Tamil Nadu.</p><br><h2 id="hh">Health Benefits :</h2><br>
+            <ol class="pp">
+                <li>Antioxidant and antibacterial properties </li>
+                <li>Reduces dental plaque </li>
+                <li>Accelerated wound healing, soothes burns </li>
+                <li>Helps treat canker sores </li>
+                <li>Reduces constipation </li>
+                <li>Improves skin, prevents wrinkles </li>
+                <li>Lowers blood sugar level </li>
+            </ol><br>
+            <h2 id="hh">Active components :</h2><br><p class="pp">Vitamins (A,C,E,B12), folic acid, choline, enzymes (aliiase, alkaline phosphatase, amylase, bradykinase, carboxypeptidase, catalase, cellulase, lipase, and peroxidase), minerals (calcium, chromium, copper, selenium, magnesium, manganese, potassium, sodium and zinc), sugars, lignin, saponins, salicylic acids and amino acids</p><br><br>
+            <h2 id="hh">How to grow :</h2><p class="pp">a) Know when to transplant<br>
+                b) Give the plant adequate sunlight and warmth (8-10 hours of sunlight per day)<br>
+                c) Plant the aloe vera in well draining soil<br>
+                d) Cover the root ball when planting but do not let the leaves touch the soil<br>
+                e) Do not water for the first few days<br>
+                </p>
+            <div id="box2"><h2>INTERESTING FACT :</h2><br><br><p class="pp" id="bb">Aloe Can Survive For Over 100 Years and it consists  of 99% of water  and 1% solid portions are known to have the most active nutrients</p></div>
+        </div><br><br>
+        <div id="third">
+            <h1 class="head3">LEMONGRASS (Cymbopogo) : <img src="https://cdn.pixabay.com/photo/2022/01/17/02/14/lemongrass-6943711_960_720.jpg" alt=""></h1><br><p class="pp">It grows in many parts of tropical and sub-tropical South East Asia and Africa. In India, it is cultivated along Western Ghats (Maharashtra, Kerala), Karnataka and Tamil Nadu states besides foot-hills of Arunachal Pradesh and Sikkim.</p><br><h2 id="hh">Medical Benefits :</h2><br>
+            <ol class="pp">
+                <li>Helps prevent the growth of some bacteria and yeast</li>
+                <li>Relieve pain and swelling</li>
+                <li>Reduce fever </li>
+                <li>Improve levels of sugar and cholesterol in the blood</li>
+                <li>Stimulate the uterus and menstrual flow</li>
+            </ol><br>
+            <h2 id="hh">Active components :</h2><br><p class="pp">vitamins A and C, folic acid, magnesium, zinc, copper, iron, potassium, calcium and manganese.</p><br>
+            <h2 id="hh">How to grow :</h2><br><p class="pp">a) Lemongrass requires full sun and well-draining, moist soil that’s rich in organic matter<br>
+                b) Plants will be ready to harvest after 75-100 days of sowing the seeds<br>
+                c) If you leave the plants past this point, without cutting for harvest they will continue to grow and provide ornamental interest in the garden year-round in warm climates<br> </p><br>
+                <div id="box3"><h2>INTERESTING FACT :</h2><br><br><p class="pp" id="bb">The name lemongrass is derived from the typical lemon-like odour of the essential oil present in the shoot , An Herb that grows up to four feet tall and three feet wide and contains citronella, a natural oil that mosquitoes cannot stand</p></div>
+        </div><br><br>
+        <div id="fourth">
+            <h1 class="head4">NEEM (Azadirachta indica) : <img src="https://cdn.pixabay.com/photo/2015/02/27/09/28/neem-leaves-651913_960_720.jpg" alt=""></h1><br><p class="pp">Neem is thought to have originated in Assam and Burma (where it is common throughout the central dry zone and the Siwalik hills). However, the exact origin is uncertain: some say neem is native to the whole Indian subcontinent; others attribute it to dry forest areas throughout all of South and Southeast Asia, including Pakistan, Sri Lanka, Thailand, Malaysia, and Indonesia.</p><br><h2 id="hh">Medical Benefits :</h2><br><p class="pp">All parts of the neem tree-leaves, flowers, seeds, fruits, roots and bark have been used traditionally for the treatment of:</p><ol class="pp">
+                <li>Inflammation</li>
+                <li>Infections</li>
+                <li>Fever</li>
+                <li>4] Skin diseases </li>
+                <li>5] Dental disorders. </li>
+            </ol><br><p class="pp">Neem leaf and its constituents have been demonstrated to exhibit immunomodulatory, anti-inflammatory, antihyperglycaemic, antiulcer, antimalarial, antifungal, antibacterial, antiviral, antioxidant, antimutagenic and anticarcinogenic properties.</p><br>
+            <h2 id="hh">Active components :</h2><br><p class="pp">Azadirachtin, nimbolinin, nimbin, nimbidin, nimbidol, salannin, and quercetin.</p><br>
+            <h2 id="hh">How to grow :</h2><br><p class="pp">a) The pulp from the fruit can be removed by rubbing it against a coarse surface when it is wet<Br>
+                b) Wash the seeds and sow them as early as possible <br>
+                c) Cover them with an inch of the potting mix and keep the pot warm and wet. It takes 1-3 weeks for them to germinate. <br>
+                d) If you find it easier to start with a plant, put it in a large container with a drainage hole and add in a good potting mix. <br>
+                e) Give your neem tree lots of indirect sunlight at first. However, you should avoid prolonged periods in the sun until your tree shows signs of new growth. <br>
+                </p><br>
+            <div id="box4"><h2>INTERESTING FACT :</h2><br><br><p class="pp" id="bb">Neem trees can live for up to 200 years ,The first recorded indication that neem was being used in the medical treatment was about 4 500 years ago</p></div>
+        </div><br>
+        <div id="fifth">
+            <h1 class="head5">CURRY LEAVES (Murraya koenigii) : <img src="https://cdn.pixabay.com/photo/2018/08/09/11/35/wet-3594303_960_720.jpg" alt=""></h1><br><p class="pp">Murraya koenigii originates from east and south part of India, Pakistan, Sri Lanka, China and Hainan but widely cultivated in South-East Asia and some parts of the United States and Australia.13 It grows throughout India up to the height of 1500 to 1655m from sea level and in the Andaman Islands.</p><br>
+            <h2 id="hh">Medical Benefits :</h2><br><p class="pp"><ol>
+                <li>1] Curry Leaves can aid weight loss </li>
+                <li>2] Help in treating dysentery, constipation and diarrhea</li>
+                <li>3] Relieves morning sickness and nausea </li>
+                <li>4] Good for diabetics </li>
+                <li>5] Good for eyesight </li>
+                <li>6] Heals wounds, burns, skin eruptions </li>
+                <li>7] Hair growth </li>
+                <li>8] Improves memory </li>
+            </ol><BR><BR><h2 id="hh">Active components :</h2><p class="pp">Alkaloids, flavonoids carbohydrates and sterol</p></p>
+                <h2>How to grow :</h2><br><p class="pp">
+                    a) Fill a small pot with a mix of potting soil and compost<br>
+                    b) Push a curry leaf plant seed 1⁄2 in (1.3 cm) into the potting mix<br>
+                    c) Water the soil thoroughly until you see it come out of the drainage holes<br>
+                    d) Put the pot in an area that gets at least 6hours of sunlight per day  <br></p><br>
+
+            <div id="box5"><h2>INTERESTING FACT :</h2><br><br><p class="pp" id="bb">British merchants invented curry powder in the late 18th century. The blend of spices was intended to mimic the taste of authentic Indian curries.</p></div>
+        </div><br><br>
+        <div id="sixth">
+            <h1 class="head6">GINGER (Zingiber officinale) : <img src="https://cdn.pixabay.com/photo/2020/04/29/12/35/ginger-5108742_960_720.jpg" alt=""></h1><br><p class="pp">Ginger is in the family Zingiberaceae. Ginger originated in Maritime Southeast Asia and was likely domesticated first by the Austronesian people. It was transported with them throughout the Indo-Pacific during the Austronesian expansion (c. 5,000 BP), reaching as far as Hawaii.</p><br>
+            <h2 id="hh">Medical benefits :</h2><br><p class="pp">
+                1] Weight loss <BR>
+                2] Rejuvenate skin<br>
+                3] Supports immune system<br> 
+                4] Helps digestion <Br>
+                5] Minimize inflammation and pain during fibromyalgia and rheumatoid arthritis<br>
+                6] Drastically lowers blood sugar level <Br>
+                7] Significantly reduces menstrual pain <Br>
+                8] Lowers cholesterol level <br>
+                9] Improves brain function <br></p><br>
+                <h2 id="hh">Active components :</h2><br><p class="pp">Numerous active ingredients are present in ginger including terpenes and oleoresin which called ginger oil. Ginger also constitutes volatile oils approximately 1% to 3% and non-volatile pungent components oleoresin. The major identified components from terpene are sesquiterpene hydrocarbons and phenolic compounds which are gingerol and shogaol and lipophilic rhizome extracts, yielded potentially active gingerols, which can be converted to shogaols, zingerone, and paradol.</p><br>
+                <h2 id="hh">How to grow :</h2><br><p class="pp">a) Slice off the fingers, making sure each rhizome piece is 1 to 2 inches long with at least one bud<Br>
+                    b) Allow the pieces to dry for 24-48 hours before planting <br>
+                    c) Plant cut sections at least 12 inches apart no deeper than 1 inch<br>
+                    d) Water well after planting<br>
+                    e) Leaves will emerge after about 1 week<br>
+                    f) Water sparingly but deeply after you see growth<br>
+                    </p>
+                    <div id="box6"><h2>INTERESTING FACT :</h2><br><p class="pp" id="bb">Ginger's generic name, Zingiber, is derived from the Greek zingiberis, which comes from the Sanskrit name of the spice.</p></div><br>
+        </div><br><br>
+        <div id="seventh">
+            <h1 class="head7">TURMERIC (Curcuma longa) : <img src="https://cdn.pixabay.com/photo/2018/03/13/15/39/food-3222840_960_720.jpg" alt=""></h1><br><p class="pp">Turmeric is in the family Zingiberaceae. Turmeric as an aromatic medicinal plant was known to Indians since ancient times. Many scientists and historians argue that the South Asia is the original home of Turmeric, from there it might have spread to countries in the South East Asia and pacific islands where Turmeric is cultivated. Turmeric is widely cultivated mainly in India , China, Taiwan, Indonesia, Sri Lanka, Java, Brazil, Peru, many parts of Africa and Australia.</p><br>
+            <h2 id="hh">Medical benefits :</h2><br><p class="pp">1] Increase the antioxidant capacity of body 
+                2] Helps against chronic inflammation 
+                3] Boosts brain-derived neurotrophic factor
+                4] Lowers risk of heart diseases 
+                5] Helps prevent cancer 
+                6] Useful in treating alzheimer’s disease 
+                7] It has benefits against depression 
+                8] Fights age related chronic diseases 
+                </p><BR>
+                    <h2 id="hh">How to grow :</h2><br><p class="pp">a) Cut your rhizomes into sections, with two or three buds on each section<br>
+                        b) Fill 3-inch pots halfway with a good potting soil <br>
+                        c) Lay the rhizome sections flat on the soil, and cover with more potting soil<br>
+                        d) Water well and slip the pots into clear plastic bags<br>
+                        f) Place the pots or clamshells in the warmest place<br>
+                        g) Your turmeric is ready to harvest about 7-10 months after planting<br>
+                        </p><br>
+                <div id="box7"><h2>INTERESTING FACT :</h2><br><p class="pp" id="bb">Turmeric has been used as a medicinal herb for 4,000 years. It’s a tentpole of an Indian alternative medicine practice called Ayurveda.</p></div>
+        </div><br><br><br>
+        <div id="eighth">
+            <h1 class="head8">Ajwain ( Trachyspermum ammi) : <img src="https://cdn.pixabay.com/photo/2018/05/13/10/11/ajwain-3395800_960_720.jpg" alt=""></h1><br><p class="pp">Carom seeds are the seeds of the ajwain herb.Although referred to as “seeds,” carom seeds are the fruit of the ajwain herb.<br>Ajwain originated in the Middle East, possibly in Egypt. It is now primarily grown and used in the Indian Subcontinent, but also in Iran, Egypt and Afghanistan. It is sometimes used as an ingredient in berbere, a spice mixture favored in Eritrea and Ethiopia.</p><br><h2 id="hh">Medical components :</h2><br><p class="pp">1] Fights bacteria and fungi <BR>
+                2] Improves cholesterol levels <br>
+                3] Lowers blood pressure <br>
+                4] Combats peptic ulcers<br>
+                5] Relieves indigestion <br>
+                6] Prevents coughing and improves airflow<br> 
+                7] Has anti-inflammatory effects <br>
+                </p><br><h2 id="hh">Active components :</h2><p class="pp">Thymol, Lupeol and Fatty acids </p><br>
+                <h2 id="hh">How to grow :</h2><br><p class="pp">Method 1 – Stem Cutting –a) Snip off 5-6 inches long tip or branch from a mature plant<br>
+                    b) Dip the cutting into a rooting hormone and plant in the garden soil or container a few inches deep<br>
+                    c) Place it at a shaded location and keep the soil moist by watering thoroughly <br>
+                    Method 2 – Sowing the Seeds –a) Sow the seeds few inches deep in the garden with well-amended soil or in the container with a potting mix and mist regularly<br>
+                    b) Keep the container in partial shade<br>
+                    c) The seeds will germinate within 7-10 days<br>
+                    </p><br>
+                    <div id="box8">
+                        <h2>INTERESTING FACT :</h2><br><p class="pp" id="bb">Having ajwain with lukewarm water can help you with abdominal and lower back pain </p>
+                    </div><br><br>
+        </div>
+        <div id="ninth">
+            <h1 class="head9">PAPAYA (Carica papaya) : <img src="https://cdn.pixabay.com/photo/2017/03/07/04/32/fruit-2123166_960_720.jpg" alt=""></h1><br><p class="pp">Native to tropical America, papaya originates from southern Mexico and Central America.  Papaya is also considered native to southern Florida. </p><br>
+            <h2 id="hh">Medical Benefits :</h2><br><p class="pp">1] Powerful antioxidant effects<BR> 
+                2] Has anticancer properties <br>
+                3] Improves heart health <br>
+                4] Fights inflammation <br>
+                5] Improves digestion <br>
+                6] Protects against skin damage <br>
+                </p><br><h2 id="hh">Active components :</h2><br><p class="pp">The active compounds contained in seed extract and papaya leaf are flavonoids, alkaloids, tannins, steroids, and saponins.</p><br>
+                <h2 id="hh">How to grow :</h2><br><p class="pp">a) Prepare the potting mix and plant all the picked out seeds in it a short distance apart<br>
+                    b) Create a top layer of soil and sprinkle water on it. In about 10 days you will begin to see saplings growing out of the soil<br>
+                    c) Once four to five leaves have appeared, it’s time to move the plant to a larger pot <br>
+                    d) Set up a proper drainage system by aerating the soil in the grow bag or pot you use<br>
+                    e) Keep the pot in a place with abundant sunlight<br>
+                    </p><br><div id="box9"><h2>INTERESTING FACT :</h2><br><p class="pp" id="bb">The combination of vitamins A, C, and E in papayas provides powerful antioxidant effects that may reduce free radicals and reduce overall cancer risk.</p><br></div>
+                    
+        </div><br><br>
+        <div id="tenth">
+            <h1 class="head10">MARIGOLD (Tagetes) : <img src="https://cdn.pixabay.com/photo/2021/08/21/01/27/marigold-6561566_960_720.jpg" alt=""></h1><br><p class="pp">The plants are native to the Americas, growing naturally from the southwestern United States into South America, but some species have become naturalized around the world.</p><br><h2 id="hh">Medical benefits :</h2><br><p class="pp">1] Supports skin healing<br>
+                2] Contains natural antiseptic/anti-inflammatory properties<br>
+                3 Comprises pre-cursors to the production of antioxidant Vitamin A<br>
+                4 Reduces eye infections and protects from UV and oxidative damage<br>
+                5 Helps to soothe the mucus membranes of the throat whilst easing the pain<br>
+                </p><br><h2 id="hh">Active components :</h2><br><p class="pp">Marigold contains trans-lutein as the main carotenoid component with several cis-lutein isomers as minor components.</p><br>
+                <h2 id="hh">How to grow :</h2><br><p class="pp">a) Sow marigold seed directly in the ground and cover with a thin layer of soil (about 1/8 inch deep) <br>
+                    b) Water thoroughly <br>
+                    c) Thin to 8-18 inches apart after seedlings have sprouted<br> 
+                    d) Marigolds can also be started early indoors under grow lights for transplanting outdoors about six to eight weeks before the last frost date<br>
+                    </p><br>
+                    <div id="box10"><h2>INTERESTING FACT :</h2><p class="pp" id="bb">Marigold flowers are called 'Herb of the Sun,' the distinct fragrance of these flowers helps improve one's mood and ward-off stress. The orange and yellow color of marigolds is considered auspicious for new beginnings  and important events of life.</p></div><br>
+        </div>
+       
+       
+    </div>
+</body>
+</html>
+
+
+<script>
+    alert("Wondering what are herbs ?, sit back and give a read");
+</script>

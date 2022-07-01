@@ -1,0 +1,151 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --navbar-height: 60px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* #navbar img{
+    border: 1px solid;
+    border-radius: 10px;
+} */
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 7px 10px;
+}
+#logo img{
+   
+    height: 56px;
+    margin: 4px 20px;
+    border-radius: 30px;
+}
+
+/* Navigation Bar: List Styling */
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 21px;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+
+/* Contact Section  */
+
+#contact{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 125.5%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("https://c4.wallpaperflare.com/wallpaper/436/368/905/hands-costume-office-firm-wallpaper-preview.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    padding-top: 48px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+#contact-box textarea{
+    height: 80px;
+}
+#contact-box form{
+    width: 30%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+}
+
+#contact-box{
+    font-family: 'PT Serif', serif;
+}
+
+#contact-box{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Arriving Page */
+
+
+/* Utility Classes */
+.btn{
+    padding: 6px 20px;
+    color: white;
+    background-color: rgb(51, 44, 41);
+    border: 2px solid white;
+    margin: 16px;
+    font-size: 17px;
+    border-radius: 13px;
+    cursor: pointer;
+}

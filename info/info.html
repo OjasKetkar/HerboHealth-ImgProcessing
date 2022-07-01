@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herbo health info</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Baloo+Bhai+2?query=baloo+bhai+">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            ;
+        }
+
+        #navbar {
+            display: flex;
+            position: sticky;
+            align-items: center;
+           
+            top: 0px;
+            font-size: small;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 90%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+            /* bottom: 1000px; */
+        }
+
+        #logo {
+            margin: 10px 10px;
+        }
+
+        #logo img {
+            height: 50px;
+            
+            margin: 2px 10px;
+            
+            border-radius: 40px;
+        }
+
+        #navbar ul {
+            display: flex;
+            
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+            transition: ease .6s;
+        }
+
+        .head1 {
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .head1 img {
+            height: 250px;
+            width: 400px;
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            margin-left: 100px;
+        }
+
+        #box1 {
+            border: 3px solid black;
+            height: 200px;
+            width: 600px;
+    
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background-color: rgba(119, 119, 119, 0.886);
+        }
+
+        #first::before {
+            content: "";
+            position: absolute;
+            background: url("https://cdn.pixabay.com/photo/2020/06/21/13/40/holy-basil-5324875_960_720.jpg") no-repeat center center/cover;
+            height: 1390px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.49;
+            bottom: -657px;
+            
+        }
+
+        .head2 {
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .head2 img {
+            height: 250px;
+            width: 400px;
+            border: 4px solid black;
+            border-radius: 20px;
+            margin-left: 100px;
+        }
+
+        #box2 {
+            border: 3px solid black;
+            height: 200px;
+            width: 600px;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background-color: grey;
+        }
+
+        #second::before {
+            content: "";
+            position: absolute;
+            background: url("https://img.onmanorama.com/content/dam/mm/en/food/diet-and-nutrition/images/2020/7/17/moringa-leaves.jpg") no-repeat center center/cover;
+            height: 793.5px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.49;
+            bottom: -1450px;
+        }
+
+        .head3 {
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .head3 img {
+            height: 250px;
+            width: 400px;
+            border: 4px solid black;
+            border-radius: 20px;
+            margin-left: 100px;
+        }
+
+        #box3 {
+            border: 3px solid black;
+            height: 200px;
+            width: 600px;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background-color: grey;
+        }
+
+        #third::before {
+            content: "";
+            position: absolute;
+            background: url("https://cdn.pixabay.com/photo/2019/08/03/15/01/oleander-leaves-4381912_960_720.jpg") no-repeat center center/cover;
+            height: 1039.5px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.49;
+            /* bottom: -4000px; */
+        }
+
+        .head4 {
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .head4 img {
+            height: 250px;
+            width: 400px;
+            border: 4px solid black;
+            border-radius: 20px;
+            margin-left: 100px;
+        }
+
+        #box4 {
+            border: 3px solid black;
+            height: 200px;
+            width: 600px;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background-color: grey;
+        }
+
+        #fourth::before {
+            content: "";
+            position: absolute;
+            background: url("https://findfresh.in/attachments/shop_images/cooking-with-curry-leaves-1024x684.jpg") no-repeat center center/cover;
+            height: 1224px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.49;
+        }
+
+        .head5 {
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .head5 img {
+            height: 250px;
+            width: 400px;
+            border: 4px solid black;
+            border-radius: 20px;
+            margin-left: 100px;
+        }
+
+        #box5 {
+            border: 3px solid black;
+            height: 200px;
+            width: 600px;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background-color: grey;
+        }
+
+        #fifth::before {
+            content: "";
+            position: absolute;
+            background: url("https://5.imimg.com/data5/TM/CI/MY-22972899/rasna-leaves-pluchea-lanceolata-500x500.jpg") no-repeat center center/cover;
+            height: 985px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.49;
+            /* bottom: ; */
+        }
+
+        .head6 {
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .head6 img {
+            height: 300px;
+            width: 350px;
+            border: 4px solid black;
+            border-radius: 20px;
+            margin-left: 100px;
+        }
+
+        #box6 {
+            border: 3px solid black;
+            height: 200px;
+            width: 600px;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background-color: grey;
+        }
+
+        #sixth::before {
+            content: "";
+            position: absolute;
+            background: url("https://live.staticflickr.com/8438/7798078866_8be39c85f6_b.jpg") no-repeat center center/cover;
+            height: 1123.5px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.49;
+        }
+
+        .head7 {
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .head7 img {
+            height: 250px;
+            width: 400px;
+            border: 4px solid black;
+            border-radius: 20px;
+            margin-left: 100px;
+        }
+
+        #box7 {
+            border: 3px solid black;
+            height: 200px;
+            width: 600px;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background-color: grey;
+        }
+
+        #seventh::before {
+            content: "";
+            position: absolute;
+            background: url("https://www.mapsofindia.com/ci-moi-images/my-india/2021/10/IMG-20211020-WA0005.jpg") no-repeat center center/cover;
+            height: 984.5px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.49;
+        }
+
+        .head8 {
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .head8 img {
+            height: 250px;
+            width: 400px;
+            border: 4px solid black;
+            border-radius: 20px;
+            margin-left: 100px;
+        }
+
+        #box8 {
+            border: 3px solid black;
+            height: 200px;
+            width: 600px;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background-color: grey;
+        }
+
+        #eighth::before {
+            content: "";
+            position: absolute;
+            background: url("https://cdn.pixabay.com/photo/2018/04/15/14/38/rose-3321833_960_720.jpg") no-repeat center center/cover;
+            height: 996.5px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.49;
+        }
+
+        .head9 {
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .head9 img {
+            height: 250px;
+            width: 400px;
+            border: 4px solid black;
+            border-radius: 20px;
+            margin-left: 100px;
+        }
+
+        #box9 {
+            border: 3px solid black;
+            height: 200px;
+            width: 600px;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background-color: grey;
+        }
+
+        #ninth::before {
+            content: "";
+            position: absolute;
+            background: url("https://economictimes.indiatimes.com/thumb/msid-66584915,width-1200,height-900,resizemode-4,imgsize-1204207/paan-betel-leaf_gettyimages.jpg?from=mdr") no-repeat center center/cover;
+            height: 1079.5px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.49;
+        }
+
+        .head10 {
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .head10 img {
+            height: 250px;
+            width: 400px;
+            border: 4px solid black;
+            border-radius: 20px;
+            margin-left: 100px;
+        }
+
+        #box10 {
+            border: 3px solid black;
+            height: 230px;
+            width: 600px;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background-color: grey;
+        }
+
+        #tenth::before {
+            content: "";
+            position: absolute;
+            background: url("https://i0.wp.com/grehlakshmi.com/wp-content/uploads/2021/09/46-3.jpg") no-repeat center center/cover;
+            height: 1300px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.39;
+        }
+
+        .pp {
+            margin-left: 100px;
+            margin-right: 100px;
+            font-size: 20px;
+        }
+
+        #bb {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        #hh {
+            margin-left: 100px;
+        }
+       #intrestingfact{
+        text-align: center;
+        
+       }
+        p{
+            margin: 5px 1px ;
+            padding: 1px 11px ;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="../index.html">
+                <img src="logo.jpeg" alt="error">
+            </a>
+        </div>
+        <ul>
+            <!-- <li><a href="../index.html">Home</a></li> -->
+            <li class="item"><a href="../index.html">Home</a></li>
+            <li class="item"><a href="../order/order1.html">Order</a></li>
+            <li class="item"><a href="../info/info.html">Know your Plants</a></li>
+            <li class="item"><a href="../ayurveda/ayurveda.html">Ayurveda</a></li>
+            <li class="item"><a href="../immunity/immunity.html">Immunity</a></li>
+            <li class="item"><a href="../nurseries/nursery.html">Nurseries Near You</a></li>
+            <li class="item"><a href="../vfl/vfl.html">Vocal for Local</a></li>
+            <li class="item"><a href="../sell/sell.html">Sell your plant</a></li>
+            <li class="item"><a href="http://127.0.0.1:5000/" target="_blank">Image Process</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+
+
+        <div id="first"><br>
+            <h1 class="head1"> 1) Tulsi ( Ocimum tenuiflorum):<img
+                    src="https://cdn.pixabay.com/photo/2021/06/03/12/45/basil-6306981_960_720.jpg" alt="error"></h1><br>
+            <p class="pp">Tulsi is an aromatic shrub in the basil family Lamiaceae (tribe ocimeae) that is thought to have originated in north central India and now grows native throughout the eastern world tropics.
+
+            </p><br>
+            <h2 id="hh">Medical Benefits :</h2><br>
+            <p class="pp">Anti-diabetic Agent, Lowers High Cholesterol Levels, Anti-cancer Agent, Anti-microbial Agent,
+                Helps in Wound Healing, Anti-asthmatic Agent, Helps Overcome Depression, Improves Oral Health, Gastro
+                Protective Activity, Anti-malarial Agent</p>
+            <br>
+            <h2 id="hh">How to grow :</h2><br>
+            <p class="pp">Method 1 – a) Fill a flower pot with high quality soil and water it thoroughly. You should leave about an inch (2.54 cm) of space at the top of the pot.<br> 
+                b) Sow the seeds ¼ inch (0.64 cm) beneath the soil.<br>
+                c) Keep the soil moist until the seeds germinate. The seeds will begin to grow in about 1-2 weeks<br>
+                d) Tulsi requires 6-8 hours of sunlight a day.<br>
+                Method 2 – a) Cut a 4-6 inch (10-15 cm) stem from a mature tulsi plant.<br>
+                b) Place the tulsi cutting in a glass container filled with water.<br> 
+                c) Put your tulsi plant in a warm, sunny spot.<br>
+                d) Transfer the cuttings to a pot of soil when the roots begin to grow. Your cutting will be ready to transfer to the soil when its roots are 1⁄4–1⁄2 inch (0.64–1.27 cm) long. It can take between 7 and 10 days to reach this point.
+            </p><br><br>
+            <div id="box1">
+                <h2 id="intrestingfact">- INTERESTING FACT -</h2><br>
+                <p class="pp" id="bb">The Tulsi is the most sacred plant that we worship because of its connection to Lord Vishnu & In ancient scriptures, the Tulsi is regarded as a gateway between heaven and earth.</p>
+            </div>
+        </div><br><br><br><br><br>
+
+
+        <div id="second">
+            <h1 class="head2">2) DRUMSTICK :<img
+                    src="https://static.toiimg.com/photo/69928440.cms" alt=""></h1><br>
+            <p class="pp">Drumstick is one of those rare plant species whose seeds, flowers, leaves, and stems are
+                edible and extremely nutritious.</p><br>
+            <h2 id="hh">Health Benefits :</h2><br>
+            <ol class="pp">
+                Rich in Antioxidants, May Lower Blood Sugar Levels, May Reduce Inflammation, Can Lower Cholesterol, May
+                Protect Against Arsenic Toxicity
+            </ol><br>
+
+            <h2 id="hh">How to grow :</h2>
+            <p class="pp">Drumstick is one of those rare plant species whose seeds, flowers, leaves, and stems are
+                edible and extremely nutritious.<br>
+            </p>
+            <div id="box2">
+                <h2 id="intrestingfact">- INTERESTING FACT -</h2><br><br>
+                <p class="pp" id="bb">Drumstick flowers must be ground and mixed in hot milk with brown sugar are to be taken for 48 days to stimulate their interest.</p>
+            </div>
+        </div><br><br>
+        <div id="third">
+            <h1 class="head3">3) OLEANDER : <img
+                    src="https://c4.wallpaperflare.com/wallpaper/612/160/923/nerium-oleander-pink-flowers-with-green-leaves-toxic-plants-bush-tree-in-the-family-on-doctrinal-apocynaceae-4k-ultra-hd-desktop-wallpapers-for-computers-laptop-tablet-and-mobile-phones-3840%C3%972400-wallpaper-preview.jpg" alt=""></h1><br>
+            <p class="pp">most commonly known as oleander or nerium, is a shrub or small tree cultivated worldwide in temperate and subtropical areas as an ornamental </p><br>
+            <h2 id="hh">Medical Benefits :</h2><br>
+            <ol class="pp">
+                Despite the danger, oleander seeds and leaves are used to make medicine. Oleander is used for heart
+                conditions, asthma, epilepsy, cancer, painful menstrual periods, leprosy, malaria, ringworm,
+                indigestion, and venereal disease; and to cause abortions.
+                A fixed combination of oleander leaf powdered extract, pheasant's eye fluid extract, lily-of-the-valley
+                fluid extract, and squill powdered extract has been used for treating mild heart failure.
+                Oleander is sometimes applied to the skin to treat skin problems and warts.
+
+            </ol><br>
+            <h2 id="hh"></h2><br>
+            <p class="pp"></p><br>
+            <h2 id="hh">How to grow :</h2><br>
+            <p class="pp">Plant oleander in a good-sized pot using a soil-based potting compost. Mixed with a third of
+                coarse grit or perlite to ensure good drainage. Stand the pot where there’s no danger of waterlogging –
+                inside, this can be on a large saucer of pebbles to protect surfaces, while outside the pot should be
+                raised just off the ground if standing on paving.
+            </p>
+        </div>
+        <div id="box3">
+            <h2 id="intrestingfact">- INTERESTING FACT -</h2><br><br>
+            <p class="pp" id="bb">Moringa commonly referred to as drumstick is treated as a 'super plant' for its unique yet powerful properties that combat different ailments in our system.</p>
+        </div>
+    </div><br><br>
+
+
+    
+
+
+    <div id="fourth">
+        <h1 class="head4">4) CURRY LEAVES (Murraya koenigii) :<img
+                src="https://post.healthline.com/wp-content/uploads/2020/03/curry-leaves-732x549-thumbnail-732x549.jpg" alt=""></h1><br>
+
+        <p class="pp">Murraya koenigii originates from east and south part of India, Pakistan, Sri Lanka, China and Hainan but widely cultivated in South-East Asia and some parts of the United States and Australia.13 It grows throughout India up to the height of 1500 to 1655m from sea level and in the Andaman Islands.</p><br>
+
+        <h2 id="hh">Medical Benefits :</h2><br>
+        <p class="pp">
+            
+        1] Curry Leaves can aid weight loss <br>
+                2] Help in treating dysentery, constipation and diarrhea <br>
+
+                3] Relieves morning sickness and nausea <br>
+                4] Good for diabetics <br>
+                5] Good for eyesight <br>
+                6] Heals wounds, burns, skin eruptions <br>
+                7] Hair growth <br>
+                8] Improves memory <br></p>
+        <br>
+       
+        <h2 id="hh"></h2><br>
+
+        <p class="pp"></p><br>
+
+        <h2 id="hh">How to grow :</h2><br>
+        <p class="pp"> a) Fill a small pot with a mix of potting soil and compost<br>
+            b) Push a curry leaf plant seed 1⁄2 in (1.3 cm) into the potting mix<br>
+            c) Water the soil thoroughly until you see it come out of the drainage holes<br>
+            d) Put the pot in an area that gets at least 6hours of sunlight per day  <br></p><br>
+        </p><br>
+        <div id="box4">
+            <h2 id="intrestingfact">- INTERESTING FACT -</h2><br><br>
+            <p class="pp" id="bb">British merchants invented curry powder in the late 18th century. The blend of spices was intended to mimic the taste of authentic Indian curries.
+
+            </p>
+        </div>
+    </div><br>
+
+
+
+    <div id="fifth">
+        <h1 class="head5">5) RASNA : <img src="https://4.imimg.com/data4/VT/OS/MY-32408555/rasna-500x500.jpg"
+                alt=""></h1><br>
+        <p class="pp">Rasna also known as Alpinia Galanga is an Ayurvedic Medicinal which is a rhizome grown in most of Southeast Asia and is used in cooking and home made remedies</p><br>
+        <h2 id="hh">Medical Benefits :</h2><br>
+        <p class="pp">
+         Alleviates Rheumatic Pain, Treats Cough And Cold, Uplifts Kidney Functions, Pacifies Muscle Spasms, Remedies Osteoarthritis</p>
+            
+        </ol><BR><BR>
+             
+           </p><br>
+
+           <h2 id="hh">How to grow :</h2><br>
+           <p class="pp"> Seeds can be directly sown in field.
+            Raising Propagules: Seedlings of crop could be produced through planting of transition zone cuttings of the plant in the main field during September-March.
+           </p><br><br>
+
+        <div id="box5">
+            <h2 id="intrestingfact">- INTERESTING FACT -</h2><br><br>
+            <p class="pp" id="bb">Rasna is great source of energy for students and elderly . they should be avoided by weight loss seekers and dibetics because of high sugar content</p>
+        </div>
+    </div><br><br>
+
+
+
+    <div id="sixth">
+        <h1 class="head6">6) HIBISCUS : <img
+                src="https://www.hindustantimes.com/web-stories/amazing-health-benefits-of-hibiscus-5508/assets/20.jpeg" alt=""></h1><br>
+        <p class="pp">Hibiscus is a genus of flowering plants in the mallow family, Malvaceae. The genus is quite large, comprising several hundred species that are native</p><br>
+        <h2 id="hh">Medical benefits :</h2><br>
+        <p class="pp">
+            Hibiscus is used for treating loss of appetite, colds, heart and nerve diseases, upper respiratory tract pain and swelling (inflammation), fluid retention, stomach irritation, and disorders of circulation; for dissolving phlegm; as a gentle laxative; and as a diuretic to increase urine output <br></p><br>
+        <h2 id="hh"></h2><br>
+        <p class="pp"></p><br>
+        <h2 id="hh">How to grow :</h2><br>
+        <p class="pp"> Growing hibiscus from seeds is more challenging than propagating from cuttings. They often take a long time to germinate and need a fair bit of attention.
+            Nicking the hard seed coating slightly and soaking the seeds for up to eight hours can speed up the germination process as it allows more moisture to penetrate the seed. For best results, place the seeds in a warm, sunny location (at least 75 degrees Fahrenheit) and sow seeds about a quarter-inch deep.
+            After a few weeks, seedlings should appear. With their fragile stems, they will need careful translating and gradual hardening off.
+            
+        </p>
+        <div id="box6">
+            <h2 id="intrestingfact">- INTERESTING FACT -</h2><br>
+            <p class="pp" id="bb">Hibiscus buds and flowers are edible, with a lemony taste, and are rich in vitamin C. They can be used in chutneys, soups, salads, curries, jams and jellies. Dried, they are also used in herbal tea. The Chinese hibiscus is the floral emblem of Haiti and Malaysia.</p>
+        </div><br>
+    </div><br><br>
+
+
+
+    <div id="seventh">
+        <h1 class="head7">7) PARIJAT : <img
+                src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-plants-parijat-tree-parijatak-night-flowering-jasmine-plant-16969158688908.jpg?v=1634225455" alt=""></h1><br>
+        <p class="pp">Parijat is also known in India as Harsingar, or the ornament of The Gods.</p><br>
+
+        <h2 id="hh">Medical benefits :</h2><br>
+        <p class="pp">In Ayurveda, Parijat leaves has been used to treat a different kind of fevers, cough, arthritis, worm infestation, etc. The leaves juice is bitter and works as a tonic. The kadha or decoction is excellent for arthritis, constipation, worm infestation.
+        </p><BR>
+        <h2 id="hh">How to grow :</h2><br>
+        <p class="pp">The earthen pot must have a 16 inch diameter with three drainage holes made at the bottom as that is important to get rid of excess water from the pot.
+            Plant with the seeds or cut stem in the spring season
+            Avoid planting parijat in the winter season and avoid the seeds from germinating. 
+            The potting mix must be that of 50% normal garden soil and 50% any organic compost like vermicompost. Mix well and fill the tray. 
+            Each section must have one seed each and remember to maintain a 2 cm depth. 
+            Maintain the moisture but do not overwater.
+            <br>
+        </p><br>
+        <div id="box7">
+            <h2 id="intrestingfact">- INTERESTING FACT -</h2><br>
+            <p class="pp" id="bb">: These beautiful flowers are used in many spiritual activities. This flower loses its lustre during the day and blooms at night. Parijat is known as bewail or shiuli in North-East India.</p>
+        </div>
+    </div><br><br><br>
+
+
+
+    <div id="eighth">
+        <h1 class="head8">8) ROSE APPLE: <img
+                src="https://m.media-amazon.com/images/I/41b+KhP9WuL.jpg" alt=""></h1><br>
+        <p class="pp">A crisp, yellow, 1-2" long fruit with the smell and taste of rose water. The rose apple is occasionally cultivated in the tropics but is rarely available </p><br>
+        <h2 id="hh">Medical components :</h2><br>
+        <p class="pp">Help digestion, manage diabetes, cleanse liver and kidney, boost immunity, healthy skin, maintain cardiovascular health, prevent cancer. It is good for pregnant women as it fulfills iron and vitamin deficiency in the body. Rose apples improve brain health and increase cognitive abilities. They are also effective against epilepsy, smallpox and inflammation in joints.  <br>
+        </p><br>
+        <h2 id="hh"></h2>
+        <p class="pp"></p><br>
+        <h2 id="hh">How to grow :</h2><br>
+        <p class="pp">The seeds inside ripe fruit is used for planting. Dig holes that have one-foot length, width and depth each. Fill the holes with neem cake, bone manure and topsoil before planting. Saplings can be replanted after three months. Replant saplings in May and June. Proper sunlight will ensure better yield. Regular watering is required. 
+        </p><br>
+        <div id="box8">
+            <h2 id="intrestingfact">- INTERESTING FACT -</h2><br>
+            <p class="pp" id="bb">Rose apple is highly rich in nutrients like protein, fiber, calcium, iron, vitamin A and vitamin C. Its bark contains an alkaloid compound Jambosine, which has therapeutic properties against diabetes. Organic compounds like betulinic acid and friedelolactone are also present in it.</p>
+        </div><br><br>
+    </div>
+  
+    <div id="ninth">
+        <h1 class="head10">9) BETEL: <img
+                src="https://5.imimg.com/data5/TO/ZF/QH/SELLER-702384/betel-leaf-oil-500x500.jpg" alt=""></h1><br>
+        <p class="pp">The betel plant is native to Southeast Asia. It is an evergreen, dioecious perennial, with glossy heart-shaped leaves and white catkins. Betel plants are cutlivated for their leaves which is most commonly used as flavoring in chewing areca nut (paan)..</p><br>
+        <h2 id="hh">Medical benefits :</h2><br>
+        <p class="pp"> Anti-diabetic Agent, Lowers High Cholesterol Levels, Anti-cancer Agent, Anti-microbial Agent, Helps in Wound Healing, Anti-asthmatic Agent, Helps Overcome Depression, Improves Oral Health, Gastro Protective Activity, Anti-malarial Agent
+        </p><br>
+
+        
+
+        <h2 id="hh"></h2><br>
+        <p class="pp"></p><br>
+        <h2 id="hh">How to grow :</h2><br>
+        <p class="pp">Take a 4-6 inches long cutting from a healthy plant. Make 45 degrees cut using a sharp knife just below the leaf node. Remove all leaves from the cutting except the top 2 ones. Dip the end in a rooting hormone and plant the cutting in a well-draining potting medium. Water well, and keep the pot where it gets bright, indirect light. You can also propagate the plant in water, but it’s not that effective—Put the cutting in a glass of fresh water and place it on the spot like a windowsill in indirect sunlight. Keep changing the water every 3-4 days. Once several roots appear, transplant the cutting into a pot with a well-draining potting mix.
+        </p><br>
+        <div id="box9">
+            <h2 id="intrestingfact">- INTERESTING FACT -</h2>
+            <p class="pp" id="bb">Betel is also used in religious rituals and prayers as it is considered auspicious. It appears that our paan ka patta actually contains many curative and healing benefits. The leaves are rich in vitamins like vitamin C, thiamine, niacin, riboflavin and carotene and are a great source of calcium</p>
+        </div><br>
+    </div>
+
+    <div id="tenth">
+        <h1 class="head5">10) Peepal : <img src="https://img.etimg.com/thumb/msid-61605262,width-640,resizemode-4,imgsize-281453/one-plant-to-rule-them-all.jpg"
+                alt=""></h1><br>
+        <p class="pp">Although the Peepal tree is worshiped because it is said that it is inhabited by the Gods, it is not considered appropriate according to Vastu Shastra.</p><br>
+        <h2 id="hh">Medical Benefits :</h2><br>
+        <p class="pp">
+            Whole parts of Peepal like root bark, stem bark, roots, leaves and fruits are beneficial in managing conditions like poor digestion, high sugar level and skin problems. Peepal bark helps to control the frequency of diarrhea, whereas Peepal leaves promote quick healing due to their Ropan (healing) nature.
+        </ol><BR><BR>
+            <h2 id="hh"></h2><br>
+            <p class="pp"></p><br>
+            <h2 id="hh">How to grow :</h2><br>
+            <p class="pp">1. Propagation from Seeds
+                Peepal tree bonsai is simple to develop from seeds. All you have to do is sow them in a pot and keep them under a bright, indirect light source. You can move the pot to a brighter spot once the seeds germinate. Ultimately, you have to go for stem propagation from the plant that will grow from your seeds, which brings us to our next method.
+                2. Propagation from Stem Cuttings
+                The stem of the parent plant can be cut off. The lower leaves are removed, leaving 2-3 leaves on top. After being coated in rooting hormone, the cutting is placed in damp soil. It is watered on a regular basis and placed in a location that receives enough sunshine.
+                3. Propagation from Marcotting
+                For marcotting, a healthy stem is chosen and 1 centimeter of skin is removed from the stem. A plastic cover is placed over the wound and moist mud is applied around it. This aids in the retention of moisture. This is watered on a daily basis. Once the root develops from the cut, the stem can be trimmed and planted separately.
+                
+            </p><br>
+
+        <div id="box10">
+            <h2 id="intrestingfact">- INTERESTING FACT -</h2><br>
+            <p class="pp" id="bb">: Most plants largely uptake carbon dioxide and release oxygen during the day, and uptake oxygen and release carbon dioxide at night. However, because of its ability to perform a type of photosynthesis called Crassulacean Acid Metabolism (CAM), the Peepal trees can uptake carbon dioxide during the night as well.</p>
+        </div>
+    </div><br><br>
+
+
+    </div>
+</body>
+
+</html>
+
+
+<!-- <script>
+    alert("Wondering what are herbs ?, sit back and give a read");
+</script> -->

@@ -1,0 +1,581 @@
+  :root {
+      --card-color:#abecabc4 ;
+      --bgcolor-color:#f3f6ee;
+      --button-color:green;
+      --buttonhover-color:rgb(2, 49, 2);
+    }
+    
+    
+
+
+    #navbar {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: -webkit-sticky;
+      position: sticky;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      top: 0px;
+    }
+    
+    .navbar .item {
+      background-color: black;
+      opacity: 0.6;
+    }
+    
+    .navbar .item:hover {
+      background-color: var(--buttonhover-color);
+    }
+    
+    #navbar::before {
+      content: "";
+      background-color: black;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.6;
+    }
+    
+    /* Navigation Bar: Logo and Image */
+    #logo {
+      margin: 7px 10px;
+    }
+    
+    #logo img {
+      height: 56px;
+      margin: 4px 20px;
+      border-radius: 30px;
+    }
+    
+    /* Navigation Bar: List Styling */
+    #navbar ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-family: 'Baloo Bhai 2', cursive;
+    }
+    
+    #navbar ul li {
+      list-style: none;
+      font-size: 17px;
+    }
+    
+    #navbar ul li a {
+      color: white;
+      display: block;
+      padding: 3px 22px;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+    
+    #navbar ul li a:hover {
+      color: black;
+      background-color: white;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    /* a {
+      text-decoration: none;
+      background-color: var(--button-color);
+      color: white;
+      padding: 10px;
+      border-radius: 20px;
+    } */
+    
+    .card-btn{
+      text-decoration: none;
+      background-color: var(--button-color);
+      color: white;
+      padding: 10px;
+      border-radius: 20px;
+
+    }
+    
+
+    .card-btn:hover {
+      background-color: var(--buttonhover-color); 
+    }
+    
+    body {
+      background-color: var(--bgcolor-color);
+    }
+    
+    .container {
+      display: -ms-grid;
+      display: grid;
+      height: 100vh;
+      -ms-grid-columns: 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+      -ms-grid-rows: 1fr 1fr 1fr 1fr;
+          grid-template-rows: repeat(4, 1fr);
+      margin: 20px;
+    }
+    
+
+    /* everything about the cards */
+    .cards .hibiscus {
+      background-color: var(--card-color);
+      border-radius: 30px;
+    }
+    
+    .cards .hibiscus:hover {
+      border-style: solid;
+    }
+    
+    .cards .hibiscus .info {
+      margin: 45px;
+      text-align: center;
+    }
+    
+    .cards .hibiscus .info img {
+      border-radius: 30px;
+      height: 250px;
+      width: 200px;
+    }
+    
+    .cards .hibiscus .info h2 {
+      padding: 0;
+      font-weight: bolder;
+      font-size: 40px;
+    }
+    
+    .cards .hibiscus .info p {
+      font-size: 20px;
+    }
+    
+    .cards .hibiscus .info button {
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: var(--button-color);
+      color: white;
+      font-weight: bolder;
+    }
+    
+    .cards .hibiscus .info button:hover {
+      cursor: pointer;
+      background-color: var(--buttonhover-color);
+    }
+    
+    .cards .tulsi {
+      background-color: var(--card-color);
+      border-radius: 30px;
+      margin: 8px;
+    }
+    
+    .cards .tulsi:hover {
+      border-style: solid;
+    }
+    
+    .cards .tulsi .info {
+      margin: 45px;
+      text-align: center;
+    }
+    
+    .cards .tulsi .info img {
+      border-radius: 30px;
+    }
+    
+    .cards .tulsi .info h2 {
+      padding: 0;
+      font-weight: bolder;
+      font-size: 40px;
+    }
+    
+    .cards .tulsi .info p {
+      font-size: 20px;
+    }
+    
+    .cards .tulsi .info button {
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: var(--button-color);
+      color: white;
+      font-weight: bolder;
+    }
+    
+    .cards .tulsi .info button:hover {
+      cursor: pointer;
+      background-color: var(--buttonhover-color);
+    }
+    
+    .cards .parijat {
+      background-color: var(--card-color);
+      border-radius: 30px;
+      margin: 8px;
+    }
+    
+    .cards .parijat:hover {
+      border-style: solid;
+    }
+    
+    .cards .parijat .info {
+      margin: 45px;
+      text-align: center;
+    }
+    
+    .cards .parijat .info img {
+      border-radius: 30px;
+      height: 250px;
+      width: 200px;
+    }
+    
+    .cards .parijat .info h2 {
+      padding: 0;
+      font-weight: bolder;
+      font-size: 40px;
+    }
+    
+    .cards .parijat .info p {
+      font-size: 20px;
+    }
+    
+    .cards .parijat .info button {
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: var(--button-color);
+      color: white;
+      font-weight: bolder;
+    }
+    
+    .cards .parijat .info button:hover {
+      cursor: pointer;
+      background-color: var(--buttonhover-color);
+    }
+    
+    .cards .drumstick {
+      background-color: var(--card-color);
+      border-radius: 30px;
+      margin: 8px;
+    }
+    
+    .cards .drumstick:hover {
+      border-style: solid;
+    }
+    
+    .cards .drumstick .info {
+      margin: 45px;
+      text-align: center;
+    }
+    
+    .cards .drumstick .info img {
+      border-radius: 30px;
+      height: 250px;
+      width: 200px;
+    }
+    
+    .cards .drumstick .info h2 {
+      padding: 0;
+      font-weight: bolder;
+      font-size: 40px;
+    }
+    
+    .cards .drumstick .info p {
+      font-size: 20px;
+    }
+    
+    .cards .drumstick .info button {
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: var(--button-color);
+      color: white;
+      font-weight: bolder;
+    }
+    
+    .cards .drumstick .info button:hover {
+      cursor: pointer;
+      background-color: var(--buttonhover-color);
+    }
+    
+    .cards .betel {
+      background-color: var(--card-color);
+      border-radius: 30px;
+      margin: 8px;
+    }
+    
+    .cards .betel:hover {
+      border-style: solid;
+    }
+    
+    .cards .betel .info {
+      margin: 45px;
+      text-align: center;
+    }
+    
+    .cards .betel .info img {
+      border-radius: 30px;
+      
+    }
+    
+    .cards .betel .info h2 {
+      padding: 0;
+      font-weight: bolder;
+      font-size: 40px;
+    }
+    
+    .cards .betel .info p {
+      font-size: 20px;
+    }
+    
+    .cards .betel .info button {
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: var(--button-color);
+      color: white;
+      font-weight: bolder;
+    }
+    
+    .cards .betel .info button:hover {
+      cursor: pointer;
+      background-color: var(--buttonhover-color);
+    }
+    
+    .cards .curry {
+      background-color: var(--card-color);
+      border-radius: 30px;
+      margin: 8px;
+    }
+    
+    .cards .curry:hover {
+      border-style: solid;
+    }
+    
+    .cards .curry .info {
+      margin: 45px;
+      text-align: center;
+    }
+    
+    .cards .curry .info img {
+      border-radius: 30px;
+    }
+    
+    .cards .curry .info h2 {
+      padding: 0;
+      font-weight: bolder;
+      font-size: 40px;
+    }
+    
+    .cards .curry .info p {
+      font-size: 20px;
+    }
+    
+    .cards .curry .info button {
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: var(--button-color);
+      color: white;
+      font-weight: bolder;
+    }
+    
+    .cards .curry .info button:hover {
+      cursor: pointer;
+      background-color: var(--buttonhover-color);
+    }
+    
+    .cards .peepal {
+      background-color: var(--card-color);
+      border-radius: 30px;
+      margin: 8px;
+    }
+    
+    .cards .peepal:hover {
+      border-style: solid;
+    }
+    
+    .cards .peepal .info {
+      margin: 45px;
+      text-align: center;
+    }
+    
+    .cards .peepal .info img {
+      border-radius: 30px;
+     
+    }
+    
+    .cards .peepal .info h2 {
+      padding: 0;
+      font-weight: bolder;
+      font-size: 40px;
+    }
+    
+    .cards .peepal .info p {
+      font-size: 20px;
+    }
+    
+    .cards .peepal .info button {
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: var(--button-color);
+      color: white;
+      font-weight: bolder;
+    }
+    
+    .cards .peepal .info button:hover {
+      cursor: pointer;
+      background-color: var(--buttonhover-color);
+    }
+    
+    .cards .oleander {
+      background-color: var(--card-color);
+      border-radius: 30px;
+      margin: 8px;
+      
+    }
+    
+    .cards .oleander:hover {
+      border-style: solid;
+    }
+    
+    .cards .oleander .info {
+      margin: 45px;
+      margin-left: 10px;
+      text-align: center;
+      
+    }
+    
+    .cards .oleander .info img {
+     
+      border-radius: 30px;
+      
+    }
+    
+    .cards .oleander .info h2 {
+      /* text-align: center; */
+      /* padding: 0; */
+      font-weight: bolder;
+      font-size: 40px;
+      
+      
+      
+    }
+    
+    .cards .oleander .info p {
+      font-size: 20px;
+      text-align: center;
+    }
+    
+    .cards .oleander .info button {
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: var(--button-color);
+      color: white;
+      font-weight: bolder;
+      
+      /* text-align: center; */
+    }
+    
+    .cards .oleander .info button:hover {
+      cursor: pointer;
+      background-color: var(--buttonhover-color);
+    }
+    
+    .cards .roseapple {
+      background-color: var(--card-color);
+      border-radius: 30px;
+      margin: 8px;
+    }
+    
+    .cards .roseapple:hover {
+      border-style: solid;
+    }
+    
+    .cards .roseapple .info {
+      margin: 45px;
+      text-align: center;
+    }
+    
+    .cards .roseapple .info img {
+      border-radius: 30px;
+      width: 250px;
+    }
+    
+    .cards .roseapple .info h2 {
+      padding: 0;
+      font-weight: bolder;
+      font-size: 40px;
+    }
+    
+    .cards .roseapple .info p {
+      font-size: 20px;
+    }
+    
+    .cards .roseapple .info button {
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: var(--button-color);
+      color: white;
+      font-weight: bolder;
+    }
+    
+    .cards .roseapple .info button:hover {
+      cursor: pointer;
+      background-color: var(--buttonhover-color);
+    }
+    
+    .cards .rasna {
+      background-color: var(--card-color);
+      border-radius: 30px;
+      margin: 8px;
+    }
+    
+    .cards .rasna:hover {
+      border-style: solid;
+    }
+    
+    .cards .rasna .info {
+      margin: 45px;
+      text-align: center;
+    }
+    
+    .cards .rasna .info img {
+      border-radius: 30px;
+    }
+    
+    .cards .rasna .info h2 {
+      padding: 0;
+      font-weight: bolder;
+      font-size: 40px;
+    }
+    
+    .cards .rasna .info p {
+      font-size: 20px;
+    }
+    
+    .cards .rasna .info button {
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      background-color: var(--button-color);
+      color: white;
+      font-weight: bolder;
+    }
+    
+    .cards .rasna .info button:hover {
+      cursor: pointer;
+      background-color: var(--buttonhover-color);
+    }
+
+    .navoptions{
+      text-decoration: none;
+      /* background-color: var(--button-color); */
+      color: white;
+      padding: 10px;
+      border-radius: 20px;
+    
+  }

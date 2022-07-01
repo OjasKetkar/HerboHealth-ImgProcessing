@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* CSS Variables */
+        :root {
+            --navbar-height: 60px;
+        }
+
+        /* Navigation Bar */
+        #navbar {
+            display: flex;
+            position: sticky;
+            align-items: center;
+            top: 0px;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+      
+        /* Navigation Bar: Logo and Image */
+        #logo {
+            margin: 7px 10px;
+        }
+
+        #logo img {
+
+            height: 56px;
+            margin: 4px 20px;
+            border-radius: 30px;
+        }
+
+        /* Navigation Bar: List Styling */
+
+        #navbar ul {
+            display: flex;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 17px;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+
+        }
+
+
+        footer {
+            background: black;
+            color: rgb(255, 255, 255);
+            position: relative;
+            top: 145px;
+        }
+
+        p,
+        li {
+            font-weight: bolder;
+        }
+
+        h1 {
+            font-weight: 800;
+        }
+
+       
+
+        img {
+            size: 510px 500px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .all {
+            background-color: rgba(255, 255, 255, 0.432); 
+            border-radius: 20px;
+            border: 1.5px solid rgb(15, 15, 15);
+            padding: 90px 150px;
+            margin: 300px 20px;
+        }
+
+       
+
+        .bagr-image {
+            background-image: url(
+            https://images.unsplash.com/photo-1570168007204-dfb528c6958f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            top: 145px;
+            bottom: px;
+           
+            height: 84%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.85;
+        }
+
+        .bagr-image2 {
+            background-image: url(https://images.unsplash.com/photo-1532664189809-02133fee698d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            top: 145px;
+            left: 0px;
+           
+            height: 85%;
+            width: 100%;
+            z-index: -9;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpeg" alt="FoodieGoodie">
+        </div>
+
+        <ul>
+            <li class="item"><a href="../index.html">Home</a></li>
+            <li class="item"><a href="../order/order1.html">Order</a></li>
+            <li class="item"><a href="../info/info.html">Know your Plants</a></li>
+            <li class="item"><a href="../ayurveda/ayurveda.html">Ayurveda</a></li>
+            <li class="item"><a href="../immunity/immunity.html">Immunity</a></li>
+            <li class="item"><a href="../nurseries/nursery.html">Nurseries Near You</a></li>
+            <li class="item"><a href="../vfl/vfl.html">Vocal for Local</a></li>
+            <li class="item"><a href="../sell/sell.html">Sell your plant</a></li>
+        </ul>
+    </nav>
+    <img src="https://st4.depositphotos.com/1006994/39281/v/450/depositphotos_392813268-stock-illustration-vocal-local-campaign-india-independence.jpg"
+        alt="">
+
+    <div class="bagr-image">
+        <br>
+        <div class="all" id="first">
+
+            <h1>Vocal for Local Campaign</h1>
+            <P>
+                <B>Vocal for Local</B> has become the latest trending slogan which has emerged during the
+                <B>COVID-19</B>
+                pandemic.However, the idea behind this movement is not new.It finds its roots in the Swadeshi movement
+                which
+                was popularised in <B>1905</B> during the Indian independence struggle, developed and promoted by
+                <B>Mahatma Gandhi</B> and the other great freedom fighters.
+            </P>
+
+        </div>
+        <div class="all" id="second">
+
+            <h1> Agenda Behind The Campaign </h1>
+            <p>
+                This Campaign is a part of Atmanirbhar Bharat initiative started by the Prime Minister of India. Agenda
+                of
+                this
+                campaign is to promote people to prefer buying Indian Goods over Foreign goods. This can include
+                purchasing
+                handmade products of indigenous artisans and craftsmen. Also, to improve the manufacturing sector of
+                India,
+                by
+                starting to manufacture most of the foreign goods in the country itself and improving the supply chain
+                of
+                products starting from raw materials to supplying it to the citizens.
+            </p>
+
+        </div>
+
+        <div class="all" id="third">
+            <h1> Why Should We Be Vocal For Local ? </h1>
+
+            <P>
+                <li> As the Pandemic has disrupted the global supply chain, being Atmanirbhar gives us benefit of
+                    stopping
+                    ill
+                    effects of pandemic on the Indian Economy</li>
+                <li> It would create a conducive atmosphere that truly supports common people to implement their
+                    business
+                    ideas
+                    and establish their startup.</li>
+                <li>
+                    If local sales flourish, it can potentially replace the goods we buy from foreign-based companies
+                    that
+                    import
+                    their goods to India.</li>
+                <li> Supporting local businesses has not one but multiple benefits to both us as buyers, the sellers,
+                    and
+                    also
+                    the country as a whole.</li>
+
+                <li> Another key benefit is generating employment which is one of the biggest concerns country faces.
+                </li>
+
+                <li> Last but not the least, it will make India self-reliant</li>
+            </p>
+            
+        </div>
+        <br>
+    </div>
+    <div class="bagr-image2">
+        <br>
+        <div class="all" id="forth">
+
+            <h1> Our Contribution </h1>
+
+            <p>This website is a connecting link between those wanting to sell medicinal herbs and those who want to buy
+                them. Thus it encourages people to grow Medicinal Plants at home and bolsters local Nurseries . It
+                promotes
+                people to buy local medicinal plants while taking care of their health in natural ways instead of buying
+                tons
+                of medicines from medical shops which are chemically processed and don’t help in the long run.
+                <br><b>"We
+                    are
+                    happy to make a small contribution in this Vocal for Local Campaign."</p>
+        </div>
+
+        <div id="contactus">
+            <p><br></p>
+            <p>Contact Info :</p>
+            <p>email : harshvardhankendre007@gmail.com</p>
+            <p>instagram : herbohealth</p>
+            <p>twitter : herbohealth</p>
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.FoodieGoodie.com All rights reserved!
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
+
+<script>
+    alert("Know more here about the campaign");
+</script>

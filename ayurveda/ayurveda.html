@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ayurveda</title>
+    
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Baloo+Bhai+2?query=baloo+bhai+">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Baloo Bhai 2', cursive;;
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    margin-top: 0px;
+    top: 0px;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#logo{
+     margin: 15px 15px;
+}
+#logo img{
+    height: 75px;
+    width: 75px;
+    margin: 4px 6px;
+    border: 4px soloid black;
+    border-radius: 45px;
+
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    color: rgb(3, 1, 1);
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 100px;
+}
+h1{
+   position: relative;
+   text-align: center;
+   color: red;
+   font-size: 5.5rem;
+   font-family: 'Courier New', Courier, monospace;
+    
+}
+#firsth{
+    text-align: center;
+}
+#fourthh{
+    text-align: center;
+}
+
+.img1{
+   display: flex;
+   margin: auto;
+   align-items: center;
+   justify-content: center;
+   
+}
+.img1 img{
+   height: 250px;
+   width: 250px;
+   border: 4px solid black;
+   border-radius: 20px;
+   margin-left: 100px;
+   
+}
+.img2{
+    display: flex;
+   margin: auto;
+   align-items: center;
+   justify-content: center;
+   
+}
+.img2 img{
+   height: 250px;
+   width: 250px;
+   border: 4px solid black;
+   border-radius: 20px;
+   margin-left: 100px;
+   
+
+}
+.img3{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.img3 img{
+    height: 250px;
+   width: 250px;
+   border: 4px solid black;
+   border-radius: 20px;
+   margin-left: 100px;
+
+}
+.img4{
+    display: flex;
+   margin: auto;
+   align-items: center;
+   justify-content: center;
+   
+}
+.img4 img{
+    height: 300px;
+    width: 300px;
+    
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-left: 100px;
+
+}
+.bg::before{
+    content: "";
+    color: rgb(19, 2, 2);
+    position: absolute;
+    background: url("https://img.freepik.com/free-photo/elevated-view-lemon-tea-herbs-strainer-dried-chinese-chrysanthemum-flowers-dry-grapefruit_23-2148028219.jpg?w=996") no-repeat center center/cover;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.69;
+}
+.bg1::before{
+    content: "";
+    color: rgb(19, 2, 2);
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2015/08/25/03/50/herbs-906140_960_720.jpg") no-repeat center center/cover;
+    height: 645px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.69;
+}
+.bg2::before{
+    content: "";
+    color: rgb(17, 6, 6);
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2017/04/08/22/26/buddhism-2214532_960_720.jpg") no-repeat center center/cover;
+    height: 880px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.bg3::before{
+    content: "";
+    color: rgb(17, 6, 6);
+    position: absolute;
+    background: url("bg2.jpg") no-repeat center center/cover;
+    height: 850px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.bg4::before{
+    content: "";
+    color: rgb(17, 6, 6);
+    position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2018/03/01/23/03/eat-3191933_960_720.jpg") no-repeat center center/cover;
+    height: 440px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.bg5::before{
+    content: "";
+    color: rgb(17, 6, 6);
+    position: absolute;
+    background: url("data:image/jpeg;base64,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") no-repeat center center/cover;
+    height: 680px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+
+#firsth{
+    text-align: center;
+}
+#fourthh{
+    text-align: center;
+}
+.pp{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpeg" alt="error">
+        </div>
+        <ul>
+            <li class="item"><a href="../index.html">Home</a></li>
+            <li class="item"><a href="../order/order1.html">Order</a></li>
+            <li class="item"><a href="../info/info.html">Know your Plants</a></li>
+            <li class="item"><a href="../ayurveda/ayurveda.html">Ayurveda</a></li>
+            <li class="item"><a href="../immunity/immunity.html">Immunity</a></li>
+            <li class="item"><a href="../nurseries/nursery.html">Nurseries Near You</a></li>
+            <li class="item"><a href="../vfl/vfl.html">Vocal for Local</a></li>
+            <li class="item"><a href="../sell/sell.html">Sell your plant</a></li>
+        </ul>
+    </nav><br><br>
+    <div class="container"><h1 id="heading">AYURVEDA</h1><br><br>
+    <p class="pp">Ayurveda is a Sanskrit word which means knowledge of life and longevity. Ayurveda is historic medical system originated in Indian subcontinent. Shushruta india’s ‘father of surgery’ or ‘father of brain surgery’, wrote in sushruta Samhita that dhanvantari , vishnu’s avatar was god of Ayurveda. Origin of Ayurveda was found in Atharvaveda. Ayurveda developed in vedic period & later by buddhism & Jainism also. Ancient Ayurveda includes surgeries , kidney stone therepy , liver transplant. Ayurveda includes different therapies like panchakarma , herbal medicine , meditation , yoga , massage , sattvic diet.</p><br><br>
+    <div class="bg"><h2 id="firsth">Panchakarma :</h2><br><p class="pp">Panchakarma are techniques to eliminate toxic elements from the body. It means there are 5 karmas to be done by our body , which are Vaman , Virechan , Basti , Raktamokshan , Nasya. </p>
+    <ul class="pp">
+        <li>Vaman : It is technique of vomiting that clears gastro till end of stomach and part of the respiratory tract.</li>
+        <li>Virechan : It is technique that clears gastro from end of stomach till exit.</li>
+        <li>Basti(Anuvasan) : It is technique of oil enema that helps to take out all the lipid soluble waste out through anus.</li>
+        <li>Raktamokshan : It is an blood purification therapy to removal of impure blood to neutralize accumulated toxins.</li>
+        <li>Nasya : It is technique of installation of medical substances through respiratory track to clear it.</li>
+    </ul></div><br><br>
+    <div class="bg1"><h2 class="img1">Medicinal Herbs : <img src="https://cdn.pixabay.com/photo/2018/06/05/20/18/essential-oils-3456303_960_720.jpg" alt="error"></h2><p class="pp">Ayurvedic herbs have importance in Ayurveda . These herbs have large demand in india. Herbs are basically made up of different components of palnts such as leaf , fruit , etc. They protect your body from diseases and gives health benefits. They improves digestion and health. Some of herbs are as following :</p>
+    <ol class="pp">
+        <li>Ashwagandha : It is an ayurvedic plant used for muscle growth , memory , low blood suger levels also. It also improves sleep in people with stress and anxiety disorders.</li>
+        <li>Turmeric : Turmeric helps against cough , cold , heart diseases . Also improves blood flow .</li>
+        <li>Brahmi : It is an ayurvedic herb which improves brain function . It also increase body’s ability to deal with stress.</li>
+        <li>Amla : Amla helps to reduce joint inflammation , improves digestion , improves oral health. </li>
+        <li>Tulsi : Tulsi helps for kidney diseases , feaver , headache.</li>
+        <li>Aloe Vera : Aloe Vera is plant which mainly grows in dry area . It reduces constipation , improves skin.</li>
+        <li>Neem : Neem is also popular herb , which is used for fever , dental problems.</li><p>There are many ayurvedic herbs , some of the herbs are very rare , these are only some examples of them.</p>
+    </ol></div><br><br>
+    <div class="bg2"><h2 class="img2">Meditation : <img src="https://cdn.pixabay.com/photo/2016/05/10/21/50/meditation-1384758_960_720.jpg" alt=""></h2><p class="pp">Meditation is an important part of Ayurveda which is technique of focusing of mind , to be mentally calm , to be in stable state. The first record of meditation founds in Upanishads . Buddhism have large importance for meditation.</p>
+    <p class="pp">Meditation significantly produces peace. Also reduces stress anxiety , depression , pain. Bhuddhism have history of meditation. Bhuddhist texts have ancient techniques of meditation.There is big contribution of Gautma Buddha , the founder of buddhism in meditation.<br><br>There are different techniques of meditation :</p>
+    <ol class="pp">
+        <li>spiritual meditation involves practicing meditation using mantra or a word . It is widely used type of meditation.</li>
+        <li>Focused meditation involves concentration using any of the five senses.</li>
+        <li>Mindfulness meditation involves paying attention to your thoughts of your mind and study them.</li>
+
+    </ol>
+    <p class="pp">Different relegions uses different techniques . Meditation is beneficial for better sleep , increase focus , reduce , depression . Still research is going on this topic  .</p></div><br><br>
+    <h2 id="fourthh">Yoga :</h2><br><p class="pp">The word ‘yoga’ comes from root word ‘yuj’ which means ‘to bind’. Yoga includes different exercises which are useful to be well-being. Yoga which is basically part of Ayurveda , is world wide accepted.</p>
+    <p class="pp">     There are many benefits of yoga such as it improves flexibility , it helps to relief stress ,  it improves mental health , it reduces inflammation , it increases your strength , it reduces anxiety , it boosts our immunity , it improves our balance , it improves quality of life , self-esteem , improves bone health and most important it improves brain functioning.</p>
+    <p class="pp">      There are yoga schools in india which teaches a lot more than we know about yoga . Also we celebrates ‘international yoga day’ on 21st June .</p></div><br><br>
+    <div class="bg4"><h2 class="img3">Sattvic Diet : <img src="https://img.freepik.com/free-photo/ingredients-healthy-foods-selection-white-wooden-background_35641-3003.jpg?w=1060" alt="error"></h2><p class="pp">Sattvic diet have it’s roots in Ayurveda . The word sattvic means ‘pure essence’ and sattvic food means pure and balanced diet . sattvic food is most nutritious. According to Ayurveda sattvic diet  promots  your physical strength , mental health. Sattvic diet is vegetarian diet based on Ayurveda includes high fibers and low fats.</p>
+    <p class="pp">     It suggests that we should eatland and sea vegetables , fruits and fruit juices , legumes , sprouted grains. Also we should avoid sugar products , processed products , meat , alcohol.</p></div><br><br>
+    <div class="bg5"></div><h2 class="img4">Globalization of Ayurveda : <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtg4EpJE07gzxJNHXSLSx3Qpzjf3xltE-cVA&usqp=CAU" alt="error"></h2><p class="pp">In ancient days Ayurveda was  proper medical system , but due to foreign invansions it goes on decreasing. But now a days we will be seeing that Ayurveda is getting popular day by day .</p>
+    <p class="pp">In india Gujarat Ayurveda university , BHU , International academy of Ayurveda , pune  teaches Ayurveda for foreign citizens . There are many institutions in different countries offering cources and degree for Ayurveda. In sri lanka government have started different programs related to Ayurveda and also they are providing degree of BAMS . In Nepal Ayurveda have big status and importance. There are also ayurvedic pharmaceutical industries. As of today ayurvedic content is also available in different languages like german ,   Japanese , Russian , Korean , English which helps for globalization of Ayurveda.   </p></div>
+
+    </div><br>
+    
+</body>
+</html>
+
+<script>
+    alert("Welcome to the world of Ayurveda");
+</script>

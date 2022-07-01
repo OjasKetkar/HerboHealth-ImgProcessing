@@ -1,0 +1,158 @@
+:root {
+    --button-color:rgb(230, 122, 0);
+    --buttonhover-color:#bb6503;
+    --bgcolor:#008000;
+  }
+  
+  body {
+    font-weight: bold;
+    background-image: url("https://5.imimg.com/data5/KH/UB/MY-74779207/rasna-leaf-250x250.jpg");
+    opacity: 1.5;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .name {
+    text-align: center;
+    font-size: 40px;
+    margin: 50px;
+    font-weight: bolder;
+  }
+  
+  .images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 60px;
+  }
+  
+  .images .i1 .i2 .i3 {
+    margin: 10px;
+  }
+  
+  .maininfo {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .add {
+    padding-left: 10px;
+    width: 100%;
+    color: rgb(12, 13, 13);
+  }
+  
+  .add:hover {
+    background-color: #e67a00;
+    color: rgb(248, 237, 237);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .fact {
+    width: 100%;
+    padding-left: 10px;
+    color: rgb(3, 5, 5);
+  }
+  
+  .fact:hover {
+    background-color: #e67a00;
+    color: rgb(246, 236, 236);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .buy {
+    margin: 20px;
+    border: none;
+    background-color: var(--button-color);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+  
+  .buy:hover {
+    background-color: var(--buttonhover-color);
+    cursor: pointer;
+  }
+  
+  .price {
+    margin-bottom: 30px;
+    color: azure;
+  }
+  
+  .medprop {
+    text-align: left;
+    padding-left: 10px;
+    color: rgb(3, 4, 4);
+  }
+  
+  .medprop:hover {
+    background-color: #e67a00;
+    color: rgb(252, 243, 243);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .grow {
+    text-align: left;
+    color: rgb(233, 252, 252);
+  }
+  
+  .grow:hover {
+    background-color: #e67a00;
+    color: rgb(10, 10, 10);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    cursor: pointer;
+  }
+  
+  .back {
+    margin-bottom: -20px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--button-color);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .back:hover {
+    background-color: var();
+  }
+  
+  .components {
+    width: 100%;
+    padding-left: 10px;
+    color: rgb(6, 7, 7);
+  }
+  
+  .components:hover {
+    background-color: #e67a00;
+    color: rgb(247, 235, 235);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 100%;
+    cursor: pointer;
+  }
+  /*# sourceMappingURL=mari.css.map */

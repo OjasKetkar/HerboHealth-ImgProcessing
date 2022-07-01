@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --navbar-height: 60px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* #navbar img{
+    border: 1px solid;
+    border-radius: 10px;
+} */
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 7px 10px;
+}
+#logo img{
+   
+    height: 56px;
+    margin: 4px 20px;
+    border-radius: 30px;
+}
+
+/* Navigation Bar: List Styling */
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 21px;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+
+/* arriving message */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 566px;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("https://c4.wallpaperflare.com/wallpaper/436/368/905/hands-costume-office-firm-wallpaper-preview.jpg")  ;
+    background-size: cover;
+    height: 102%;
+    width: 100%;
+    opacity: 0.8;
+    background-position: center;
+    z-index: -1;
+}
+
+#contact h2{
+    opacity: 1;
+}
+
+/* Utility classes */
+.h-primary{
+    font-family: 'PT Serif', serif;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'PT Serif', serif;
+    font-size-adjust: 3rem;
+    padding: 12px;
+}
+
+.btn{
+    /* text-decoration: none; */
+    padding: 6px 20px;
+    color: white;
+    background-color: rgb(51, 44, 41);
+    border: 2px solid white;
+    margin: 16px;
+    font-size: 17px;
+    border-radius: 13px;
+    cursor: pointer;
+}

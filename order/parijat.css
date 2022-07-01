@@ -1,0 +1,161 @@
+:root {
+    --button-color:green;
+    --buttonhover-color:#023102;
+    --bgcolor:#008000;
+  }
+  
+  body {
+    font-weight: bold;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0gYAafZ1nkNrilFqpss4ljw6yXSvHH8315g&usqp=CAU);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .name {
+    text-align: center;
+    font-size: 40px;
+    margin: 50px;
+    font-weight: bolder;
+  }
+  
+  .images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 60px;
+  }
+  
+  .images .i1 .i2 .i3 {
+    margin: 10px;
+  }
+  .i1{
+    height: 250px;
+    width: 250px;
+  }
+  .i2{
+    height: 250px;
+    width: 250px;
+  }
+  .maininfo {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .add {
+    padding-left: 10px;
+    width: 100%;
+    color: azure;
+  }
+  
+  .add:hover {
+    background-color: #008000;
+    color: rgb(5, 5, 5);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .fact {
+    width: 100%;
+    padding-left: 10px;
+    color: azure;
+  }
+  
+  .fact:hover {
+    background-color: #008000;
+    color: rgb(7, 7, 7);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .buy {
+    margin: 20px;
+    border: none;
+    background-color: var(--button-color);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+  
+  .buy:hover {
+    background-color: var(--buttonhover-color);
+    cursor: pointer;
+  }
+  
+  .price {
+    margin-bottom: 30px;
+    color: azure;
+  }
+  
+  
+  .medprop {
+    text-align: left;
+    padding-left: 10px;
+    color: azure;
+  }
+  
+  .medprop:hover {
+    background-color: #008000;
+    color: rgb(12, 8, 8);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .grow {
+    text-align: left;
+    color: azure;
+  }
+  
+  .grow:hover {
+    background-color: #008000;
+    color: rgb(5, 4, 4);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    cursor: pointer;
+  }
+  
+  .back {
+    margin-bottom: -20px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--button-color);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .components {
+    width: 100%;
+    padding-left: 10px;
+    color: azure;
+  }
+  
+  .components:hover {
+    background-color: #008000;
+    color: rgb(7, 6, 6);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 100%;
+    cursor: pointer;
+  }
+  /*# sourceMappingURL=neem.css.map */
